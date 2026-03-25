@@ -1,0 +1,30 @@
+[
+  {
+    "id": "202eeaf6-3498-4958-8d1b-229cf0dda835",
+    "createdAt": "2026-02-18T18:41:46.127Z",
+    "total": 39990,
+    "items": [
+      {
+        "productId": 1,
+        "title": "Auriculares Inalámbricos LunaSound",
+        "quantity": 1,
+        "unitPrice": 39990,
+        "lineTotal": 39990
+      }
+    ]
+  },
+  {
+    "id": "db9a0956-e8b2-46fb-b8e6-54f0a3edf132",
+    "createdAt": "2026-02-18T18:42:26.173Z",
+    "total": 39990,
+    "items": [
+      {
+        "productId": 1,
+        "title": "Auriculares Inalámbricos LunaSound",
+        "quantity": 1,
+        "unitPrice": 39990,
+        "lineTotal": 39990
+      }
+    ]
+  }
+]

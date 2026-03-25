@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luna Store | Descripción de producto</title>
+    <meta name="description" content="Página de detalle para un producto destacado de la tienda Luna Store.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header class="border-bottom sticky-top bg-white shadow-sm">
+      <nav class="navbar navbar-expand-lg container py-3">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">Luna Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#detailNav" aria-controls="detailNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="detailNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#carrito">Carro</a></li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary ms-lg-3" href="#cta" role="button">
+                Comprar ahora
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-5">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="index.html#productos">Audio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Auriculares Nova X2</li>
+          </ol>
+        </nav>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6">
+            <div class="product-gallery-main mb-3">
+              <img id="product-main-image" src="https://acdn-us.mitiendanube.com/stores/003/248/153/products/5-c74c83ec037dbdd2e317477436004549-1024-1024.webp" alt="Auriculares Nova X2 - vista frontal" loading="lazy">
+            </div>
+            <div class="row g-3 product-thumbs" id="product-thumb-list">
+              <div class="col-4">
+                <button type="button" class="product-thumb-btn active" data-image="https://acdn-us.mitiendanube.com/stores/003/248/153/products/5-c74c83ec037dbdd2e317477436004549-1024-1024.webp" data-alt="Auriculares Nova X2 - vista frontal" aria-pressed="true">
+                  <img src="https://acdn-us.mitiendanube.com/stores/003/248/153/products/5-c74c83ec037dbdd2e317477436004549-1024-1024.webp" alt="Miniatura frontal de los auriculares" loading="lazy">
+                </button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="product-thumb-btn" data-image="https://acdn-us.mitiendanube.com/stores/003/248/153/products/36-6bc32f628637dbf04f17132060525652-1024-1024.webp" data-alt="Auriculares Nova X2 - vista lateral" aria-pressed="false">
+                  <img src="https://acdn-us.mitiendanube.com/stores/003/248/153/products/36-6bc32f628637dbf04f17132060525652-1024-1024.webp" alt="Miniatura lateral de los auriculares" loading="lazy">
+                </button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="product-thumb-btn" data-image="https://acdn-us.mitiendanube.com/stores/003/248/153/products/35-e379c925e7242c11d817132060524940-1024-1024.webp" data-alt="Auriculares Nova X2 - vista plegada" aria-pressed="false">
+                  <img src="https://acdn-us.mitiendanube.com/stores/003/248/153/products/35-e379c925e7242c11d817132060524940-1024-1024.webp" alt="Miniatura plegada de los auriculares" loading="lazy">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <p class="text-uppercase text-primary fw-semibold">Colección Studio</p>
+            <h1 class="display-6 fw-bold">Auriculares Nova X2</h1>
+            <p class="lead text-body-secondary">Sonido certificado Hi-Res, cancelación activa inteligente y materiales reciclados que abrazan tus sesiones creativas.</p>
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <span class="badge bg-success-subtle text-success">En stock</span>
+              <span class="badge bg-dark-subtle text-dark">Envío gratis</span>
+            </div>
+
+            <p class="text-body-secondary mb-1">Precio</p>
+            <p class="display-6 fw-bold">$129.990 CLP</p>
+
+            <div class="mb-4">
+              <p class="fw-semibold mb-1">Colores disponibles</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary btn-sm active">Nebula White</button>
+                <button class="btn btn-outline-secondary btn-sm">Graphite</button>
+                <button class="btn btn-outline-secondary btn-sm">Rose Sand</button>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row gap-3 mb-4" id="cta">
+              <button class="btn btn-primary btn-lg flex-grow-1">Agregar al carrito</button>
+              <button class="btn btn-outline-primary btn-lg flex-grow-1">Comprar ahora</button>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 text-body-secondary mb-4">
+              <i class="bi bi-recycle fs-3 text-primary"></i>
+              <p class="mb-0">Fabricado con aluminio reciclado y cuero vegano certificado por PETA.</p>
+            </div>
+
+            <div class="accordion" id="specs">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Detalles técnicos
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#specs">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Cancelación activa adaptativa con 4 micrófonos.</li>
+                      <li>Autonomía de 40 horas y carga rápida USB-C.</li>
+                      <li>Compatibilidad multipunto y app iOS/Android.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Qué incluye la caja?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#specs">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Estuche rígido confeccionado con botellas PET recicladas.</li>
+                      <li>Cable USB-C trenzado (1.8 m) y adaptador de viaje.</li>
+                      <li>Guía de inicio rápido y tarjeta de garantía.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="mt-5 pt-4 border-top">
+          <h2 class="h4">Beneficios adicionales</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="info-card h-100">
+                <i class="bi bi-battery-charging fs-1 text-primary"></i>
+                <h3 class="h5 mt-3">Carga exprés</h3>
+                <p class="text-body-secondary">Con 10 minutos de carga obtienes 8 horas adicionales de reproducción.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card h-100">
+                <i class="bi bi-soundwave fs-1 text-primary"></i>
+                <h3 class="h5 mt-3">Audio espacial</h3>
+                <p class="text-body-secondary">Procesador dedicado que adapta el sonido según la app y el movimiento.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card h-100">
+                <i class="bi bi-heart fs-1 text-primary"></i>
+                <h3 class="h5 mt-3">Confort total</h3>
+                <p class="text-body-secondary">Almohadillas de espuma viscoelástica y arco flotante sin puntos de presión.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-4 border-top bg-white">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          <p class="mb-0 fw-semibold">Luna Store</p>
+          <small class="text-body-secondary">© <span id="year"></span> Todos los derechos reservados</small>
+        </div>
+        <div class="d-flex gap-3">
+          <a href="#" aria-label="Instagram" class="text-body-secondary">Instagram</a>
+          <a href="#" aria-label="TikTok" class="text-body-secondary">TikTok</a>
+          <a href="#" aria-label="YouTube" class="text-body-secondary">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const yearLabel = document.getElementById("year");
+        if (yearLabel) {
+          yearLabel.textContent = new Date().getFullYear();
+        }
+
+        const mainImage = document.getElementById("product-main-image");
+        const thumbButtons = document.querySelectorAll(".product-thumb-btn");
+
+        const setActiveThumb = (target) => {
+          thumbButtons.forEach((button) => {
+            button.classList.remove("active");
+            button.setAttribute("aria-pressed", "false");
+          });
+          target.classList.add("active");
+          target.setAttribute("aria-pressed", "true");
+        };
+
+        thumbButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            if (!mainImage) return;
+            const newSrc = button.dataset.image;
+            const newAlt = button.dataset.alt;
+            if (newSrc) {
+              mainImage.src = newSrc;
+            }
+            if (newAlt) {
+              mainImage.alt = newAlt;
+            }
+            setActiveThumb(button);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

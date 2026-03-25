@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luna Store | Tienda de e-commerce</title>
+  <meta name="description" content="Frontend de una tienda e-commerce moderna construida con Bootstrap 5.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="border-bottom sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg container py-3" aria-label="Barra de navegación principal">
+      <!-- Requisito Módulo 4: h1 Tienda -->
+      <h1 class="navbar-brand fw-bold text-primary mb-0" style="font-size: 1.25rem;">Tienda</h1>
+      <a class="navbar-brand fw-bold text-primary" href="#hero">Luna Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Requisito Módulo 4: Input de búsqueda -->
+          <li class="nav-item me-3">
+            <input id="buscar" class="form-control" placeholder="Buscar..." />
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+          <li class="nav-item"><a class="nav-link" href="#newsletter">Novedades</a></li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ms-lg-3" href="#carrito" role="button">
+              <i class="bi bi-cart3 me-2" aria-hidden="true"></i>
+              <!-- Requisito Módulo 4: Indicador carrito -->
+              <span>Carrito: <strong id="cart-count">0</strong></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="badge bg-primary-subtle text-primary fw-semibold mb-3">Nuevo</p>
+            <h1 class="display-5 fw-bold">Descubre tecnología consciente<br>para tu día a día</h1>
+            <p class="lead text-body-secondary">Seleccionamos gadgets sostenibles y fabricados éticamente para que
+              disfrutes sin comprometer al planeta.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a href="#productos" class="btn btn-primary btn-lg">Explorar productos</a>
+              <a href="producto.html" class="btn btn-outline-primary btn-lg">Ver producto destacado</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-card rounded-4 shadow-sm p-4 bg-white">
+              <img class="img-fluid rounded-4"
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+                alt="Colección de gadgets minimalistas">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="destacados">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="icon-circle text-primary mb-3"><i class="bi bi-truck"></i></div>
+              <h3>Envío rápido y neutro</h3>
+              <p class="text-body-secondary">Compensamos la huella de carbono en cada entrega nacional.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="icon-circle text-primary mb-3"><i class="bi bi-shield-check"></i></div>
+              <h3>Garantía extendida</h3>
+              <p class="text-body-secondary">Todos los productos incluyen 2 años de cobertura Premium.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="icon-circle text-primary mb-3"><i class="bi bi-recycle"></i></div>
+              <h3>Programa de reciclaje</h3>
+              <p class="text-body-secondary">Devuelve tus dispositivos y obtén créditos para tu próxima compra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+          <div>
+            <p class="text-uppercase text-primary fw-semibold mb-1">Colección 2025</p>
+            <h2 class="fw-bold mb-0">Productos recomendados</h2>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary" data-filter="todos">Todos</button>
+            <button class="btn btn-outline-primary" data-filter="electronica">Electrónica</button>
+            <button class="btn btn-outline-primary" data-filter="joyeria">Joyería</button>
+            <button class="btn btn-outline-primary" data-filter="ropa">Ropa</button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="product-grid" aria-live="polite"></div>
+      </div>
+
+      <!-- Requisito Módulo 4: Grid para productos de FakeStoreAPI -->
+      <div class="container mt-4">
+        <main id="grid" class="grid"></main>
+      </div>
+    </section>
+
+    <section id="carrito" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Carrito de compras</h2>
+            <p class="text-body-secondary mb-4">Al agregar productos podrás finalizar una compra real con el backend
+              REST. El sistema calcula montos, registra la venta y descuenta stock automáticamente.</p>
+            <ul class="list-group list-group-flush shadow-sm rounded-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Subtotal
+                <span class="fw-semibold" id="cart-subtotal">$0 CLP</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" id="discount-line"
+                style="display: none;">
+                Descuento
+                <span class="fw-semibold text-success" id="cart-discount">$0 CLP</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Envío estimado
+                <span class="fw-semibold" id="cart-shipping">$3,990 CLP</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total
+                <span class="fw-bold fs-5" id="cart-total">$0 CLP</span>
+              </li>
+            </ul>
+
+            <!-- Sección de código de descuento -->
+            <div class="mt-3 p-3 bg-light rounded-3">
+              <label for="discount-code-input" class="form-label fw-semibold small">¿Tienes un código de
+                descuento?</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="discount-code-input" placeholder="Ej: PROMO10"
+                  aria-label="Código de descuento">
+                <button class="btn btn-primary" type="button" id="apply-discount-btn">Aplicar</button>
+              </div>
+              <div id="discount-message" class="mt-2 small" style="display: none;"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cart-preview p-4 rounded-4 shadow-sm bg-white">
+              <div id="cart-items-container">
+                <p class="text-body-secondary" id="cart-empty-message">Aún no hay productos agregados. Usa el botón
+                  "Agregar" en las tarjetas para comenzar tu compra.</p>
+              </div>
+              <button class="btn btn-primary w-100" id="checkout-button" disabled>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Recibe novedades y lanzamientos exclusivos</h2>
+            <p>Registraremos los lanzamientos de la tienda con tips de cuidado y beneficios solo para suscriptores.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="row g-2" aria-label="Formulario de suscripción a newsletter">
+              <div class="col-12 col-sm-8">
+                <label for="email" class="visually-hidden">Correo electrónico</label>
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="tuemail@ejemplo.com"
+                  required>
+              </div>
+              <div class="col-12 col-sm-4">
+                <button type="submit" class="btn btn-dark btn-lg w-100">Suscribirme</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top bg-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div>
+        <p class="mb-0 fw-semibold">Luna Store</p>
+        <small class="text-body-secondary">© <span id="year"></span> Todos los derechos reservados</small>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="#" aria-label="Instagram" class="text-body-secondary">Instagram</a>
+        <a href="#" aria-label="TikTok" class="text-body-secondary">TikTok</a>
+        <a href="#" aria-label="YouTube" class="text-body-secondary">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

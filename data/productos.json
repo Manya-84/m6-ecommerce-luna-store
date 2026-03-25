@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Auriculares Inalámbricos LunaSound",
+    "price": 39990,
+    "description": "Auriculares Bluetooth con cancelación de ruido y 30 horas de batería.",
+    "category": "electronics",
+    "image": "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=600&q=80",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "Smartwatch Orbit Pro",
+    "price": 59990,
+    "description": "Reloj inteligente con monitoreo de salud y GPS integrado.",
+    "category": "electronics",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+    "stock": 9
+  },
+  {
+    "id": 3,
+    "title": "Collar Minimal Moon",
+    "price": 24990,
+    "description": "Joya de acero inoxidable con diseño minimalista.",
+    "category": "jewelery",
+    "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80",
+    "stock": 15
+  },
+  {
+    "id": 4,
+    "title": "Polerón EcoCotton",
+    "price": 28990,
+    "description": "Polerón unisex fabricado con algodón orgánico certificado.",
+    "category": "men's clothing",
+    "image": "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=600&q=80",
+    "stock": 20
+  },
+  {
+    "id": 5,
+    "title": "Chaqueta Urban Light",
+    "price": 45990,
+    "description": "Chaqueta liviana impermeable para uso diario.",
+    "category": "women's clothing",
+    "image": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=600&q=80",
+    "stock": 14
+  }
+]

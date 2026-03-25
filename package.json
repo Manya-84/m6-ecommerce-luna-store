@@ -1,0 +1,13 @@
+{
+  "name": "m6-cierre-ecommerce-luna-store",
+  "version": "1.0.0",
+  "description": "Proyecto Módulo 6 - E-commerce con backend REST y File System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  }
+}
