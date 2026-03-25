@@ -1,10 +1,9 @@
 # Luna Store - Entrega Módulo 6
 
-Entrega del Módulo 6 del proyecto e-commerce, con backend REST básico y frontend conectado por `fetch`.
+Entrega del Módulo 6 del proyecto e-commerce.
 
 ## Datos de la entrega
 
-- Módulo: 6
 - Autor/a: Fabian Umaña
 - Repositorio GitHub: https://github.com/Manya-84/m6-ecommerce-luna-store
 
